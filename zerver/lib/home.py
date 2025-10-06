@@ -153,6 +153,9 @@ def build_page_params_for_home_page_load(
     # These end up in a JavaScript Object named 'page_params'.
     #
     # Sync this with home_params_schema in base_page_params.ts.
+    # Exclude direct messages from the start page
+    state_data["exclude_direct_messages"] = True
+
     page_params: dict[str, object] = dict(
         page_type="home",
         ## Server settings.

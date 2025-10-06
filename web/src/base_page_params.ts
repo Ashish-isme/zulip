@@ -49,6 +49,7 @@ const home_params_schema = z.looseObject({
     show_try_zulip_modal: z.boolean(),
     state_data: z.nullable(state_data_schema),
     translation_data: z.record(z.string(), z.string()),
+    exclude_direct_messages: z.optional(z.boolean()),
 });
 
 // Sync this with analytics.views.stats.render_stats.
