@@ -2,7 +2,7 @@
     color: var(--color-text-sidebar-heading);
     opacity: var(--opacity-sidebar-heading);
     transition: opacity 140ms linear;
-    font-size: inherit;
+    font-size: 50px;
     font-weight: var(--font-weight-sidebar-heading);
     letter-spacing: var(--letter-spacing-sidebar-heading);
     /* Override heading margin from Bootstrap. */
@@ -13,6 +13,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
 }
 
 #left-sidebar .input-element-wrapper:not(.left-sidebar-search-section) {
